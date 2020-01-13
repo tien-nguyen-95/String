@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Bài tập] Validate tên của lớp học</title>
+</head>
+
+<body>
+</body>
+    <script>
+        function isNameClass(str) {
+            regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+            if (regexp.test(str)) {
+                return true;
+            }
+            return false;
+        }
+
+        function main() {
+            let name1 = 'C0318G';
+            let name2 = 'M0318G';
+            console.log(isNameClass(name1));
+            console.log(isNameClass(name2));
+        }
+        
+        main()
+    </script>
+</html>
